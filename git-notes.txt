@@ -11,3 +11,33 @@
     git remote add origin https://github.com/blankoobi/nextjs-dashboard-tutorial.git
     git branch -M main
     git push -u origin main
+
+프로젝트 내 변경된 파일 푸쉬
+1. 저장소 초기화 (필요한 경우)
+git init
+
+2. 변경 사항 확인(.gitignore 파일 제외)
+git status
+
+3. 전체 추가
+git add .
+
+4. 커밋
+git commit -m "comment"
+
+5. 원격 저장소에 연결 (필요한 경우)
+git remote add origin https://github.com/blankoobi/nextjs-dashboard-tutorial.git
+
+6. 푸시
+git push -u origin <branch name>
+
+
+# tips
+.gitignore 대상인지 체크
+* git check-ignore -v <파일명 또는 경로>
+
+디렉토리에서 .gitignore 파일을 모두 출력
+git ls-files --others --ignored --exclude-standard
+
+커밋 메시지
+커밋 메시지는 나중에 협업이나 히스토리 탐색 시 매우 중요하니, 의미를 드러낼 수 있는 형태로 작성하는 습관을 들이면 좋습니다.
